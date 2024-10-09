@@ -6,4 +6,5 @@ super + s
 	scrot -s -F screenshot.png -o && kolourpaint screenshot.png
 # Mute / Unmute Audio
 XF86AudioMute
-	pamixer -t && notify-send "Audio Toggle" "TEST"
+#	pamixer -t && notify-send "Audio Toggle" "TEST"
+	~/.dotfileRepos/sxhkd/toggleAudio.sh
