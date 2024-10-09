@@ -1,0 +1,9 @@
+# Program launcher
+super + l
+	slock
+# Screenshot
+super + s
+	scrot -s -F screenshot.png -o && kolourpaint screenshot.png
+# Mute / Unmute Audio
+XF86AudioMute
+	pamixer -t
