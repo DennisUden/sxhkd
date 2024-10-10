@@ -13,3 +13,10 @@ XF86AudioRaiseVolume
 # Lower Volume
 XF86AudioLowerVolume
 	pamixer -d 5 && notify-send -t 1000 "Audio" "$(pamixer --get-volume-human)"
+# Brightness Up
+XF86MonBrightnessUp
+	brightnessctl set +10% && ~/.config/sxhkd/brightness.sh
+	
+# Brightness Down
+XF86MonBrightnessDown 
+	brightnessctl set +10%- && ~/.config/sxhkd/brightness.sh
