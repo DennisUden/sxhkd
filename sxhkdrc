@@ -6,5 +6,10 @@ super + s
 	scrot -s -F screenshot.png -o && kolourpaint screenshot.png
 # Mute / Unmute Audio
 XF86AudioMute
-#	pamixer -t && notify-send "Audio Toggle" "TEST"
-	~/.dotfileRepos/sxhkd/toggleAudio.sh
+	~/.config/sxhkd/toggleAudio.sh
+# Raise Volume
+XF86AudioRaiseVolume
+	pamixer -i 5 && notify-send -t 1000 "Audio" "$(pamixer --get-volume-human)"
+# Lower Volume
+XF86AudioLowerVolume
+	pamixer -d 5 && notify-send -t 1000 "Audio" "$(pamixer --get-volume-human)"
