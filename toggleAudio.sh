@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 if pamixer --get-volume-human | grep -q "muted"
 then

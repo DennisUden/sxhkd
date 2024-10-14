@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cur=$(brightnessctl get)
 max=$(brightnessctl max)
 rel=$((${cur}*100/${max}))
