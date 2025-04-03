@@ -3,7 +3,7 @@ super + l
 	slock
 # Screenshot
 super + s
-	scrot -s -F screenshot.png -o && kolourpaint screenshot.png
+	ksnip --rectarea	
 # Mute / Unmute Audio
 XF86AudioMute
 	~/.config/sxhkd/toggleAudio.sh
